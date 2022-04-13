@@ -1,10 +1,12 @@
 import express from 'express';
 import cors from 'cors';
+import {routes} from './src/routes/paleta.route.js';
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
+app.use('/paletas', routes);
 
 const paletas = [
     {
@@ -30,10 +32,6 @@ const paletas = [
     }
 ];
 
-// app.get('/', (req, res) => {
-//     res.send('Olá');
-// });
-
 // Get all
 app.get('/paletas/todas-paletas', (req, res) => {
     res.send(paletas);
@@ -51,7 +49,7 @@ app.get('/paletas/paleta/:id', (req, res) => {
 const port = 3001;
 
 app.listen(port, () => {
-    console.log(`Aplicação rodando na porta ${port} 🚀.`);
+    console.log(`Aplicação rodando na porta ${port} em http://localhost:${port}//paletas/todas-paletas 🚀.`);
 });
 
 
