@@ -1,0 +1,29 @@
+{
+  "name": "elgeladon",
+  "version": "1.0.0",
+  "description": "Projeto de um catalgo de sorvetes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedroasdoliveira/elgeladon.git"
+  },
+  "author": "Pedro Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedroasdoliveira/elgeladon/issues"
+  },
+  "homepage": "https://github.com/pedroasdoliveira/elgeladon#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
